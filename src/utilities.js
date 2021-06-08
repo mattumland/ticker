@@ -4,7 +4,6 @@ export const getStories = () => {
 }
 
 export const cleanStoryData = (data) => {
-    console.log(data)
     return data.results.map((story, index) => {
         return {
             'section': story.section,
@@ -28,5 +27,5 @@ const formatDate = (date) => {
 }
 
 const filterStories = () => {
-    
+
 }
