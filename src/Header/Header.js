@@ -17,10 +17,10 @@ const Header = ({ filter, updateFilter }) => {
                     <button id='world' onClick={e => updateFilter(e)}>WORLD</button>
                 </div>
                 <div className='small-button-container'>
-                    <button id='tech' onClick={e => updateFilter(e)}>TECH</button>
+                    <button id='sci' onClick={e => updateFilter(e)}>SCIENCE</button>
                     <button id='business' onClick={e => updateFilter(e)}>BUSINESS</button>
                     <button id='opinion' onClick={e => updateFilter(e)}>OPINION</button>
-                    <button id='travel' onClick={e => updateFilter(e)}>TRAVEL</button>
+                    <button id='arts' onClick={e => updateFilter(e)}>ARTS</button>
                 </div>
             </section>
         </header>
