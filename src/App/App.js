@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import { getStories, cleanStoryData } from '../utilities.js'
+import Header from '../Header/Header'
 
 function App() {
 
@@ -19,8 +20,8 @@ function App() {
   }, [])
 
   return (
-    <main>
-
+    <main className='App'>
+      <Header />
     </main>
   );
 }
