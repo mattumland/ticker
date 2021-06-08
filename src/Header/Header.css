@@ -1,0 +1,46 @@
+header {
+    background-color: black;
+    padding: 5px 15px 0 15px;
+}
+
+h1 {
+    color:ghostwhite;
+    font-size: 30px;
+}
+
+h2 {
+    color:ghostwhite;
+    font-size: 15px;
+    padding: 15px 0 0 5px;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3px 0 0 0;
+}
+
+.small-button-container {
+    display: flex;
+    flex-direction: row;
+    width: 310px;
+    justify-content: space-between;
+}
+
+button {
+    background-color: ghostwhite;
+    color: black;
+    border: none;
+    padding: 4px;
+    width: 100px;
+    font-size: 10px;
+    margin: 0 4px 0 0;
+}
+
