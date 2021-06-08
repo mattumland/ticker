@@ -7,9 +7,9 @@ const StoryGrid = (props) => {
         <button className='story-card' id={story.id} key={story.id}>
             <div className='img-box'>
                 <img src={story.imageLink} alt={story.caption} />
-            </div>>
+            </div>
             <div className='headline-box'>
-                <h3>{story.headline}</h3>
+                <h3>{story.title}</h3>
             </div>
         </button>
         )
@@ -17,7 +17,7 @@ const StoryGrid = (props) => {
 
     return (
         <section className='story-grid'>
-            { storyList.length ? storyList : <h4>No stories</h4>}
+            {storyList.length ? storyList : <h4>No stories</h4>}
         </section>
     )
 }
