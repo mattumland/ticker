@@ -6,5 +6,24 @@ export const getStories = () => {
 }
 
 export const cleanStoryData = (data) => {
-    
+    return data.results.map((story, index) => {
+        return {
+            'section': story.section,
+            'subsection': story.subsection,
+            'title': story.title,
+            'byline': story.byline,
+            'abstract': story.abstract,
+            'updatedDate': story.updated_date,
+            'publishedDate': story.published_date,
+            'link': story.short_url,
+            'imageLink': story.multimedia[0].url,
+            'imageCredit': story.multimedia[0].copyright,
+            'imageCaption': story.multimedia[0].caption,
+            'id': index
+        }
+    })
+}
+
+const formatDate = (date) => {
+
 }
