@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import { getStories, cleanStoryData } from '../utilities.js'
 import Header from '../Header/Header'
+import StoryGrid from '../StoryGrid/StoryGrid'
 
 function App() {
 
@@ -22,6 +23,11 @@ function App() {
   return (
     <main className='App'>
       <Header />
+      {allStories.length && (
+        <StoryGrid 
+          stories={allStories}
+        />
+      )}
     </main>
   );
 }

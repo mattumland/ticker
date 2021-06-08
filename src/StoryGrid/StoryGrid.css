@@ -1,0 +1,44 @@
+.story-grid {
+    width: 98%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    text-align: center;
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.img-box {
+   width:100%;
+   max-height: 380px;
+   z-index: 0;
+}
+
+img {
+    width: 100%;
+    min-height: 380px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.headline-box {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    text-align: left;
+    z-index: 3;
+}
+
+h3 {
+    color:whitesmoke;
+    margin: 5px;
+    font-size: 16px;
+}
