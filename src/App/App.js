@@ -20,9 +20,16 @@ function App() {
     .catch(error => setError(error))
   }, [])
 
+  const updateFilter = (event) => {
+    setFilter(event.target.id)
+  }
+
   return (
     <main className='App'>
-      <Header />
+      <Header 
+        updateFilter={updateFilter}
+        currentFilter={filter}
+      />
       {allStories.length && (
         <StoryGrid 
           stories={allStories}
