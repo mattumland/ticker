@@ -1,11 +1,8 @@
 import './Header.css';
-import React, { useState } from 'react';
+import React from 'react';
 
-const Header = () => {
-
-    const [currentFilter, updateCurrentFilter] = ('')
-
-
+const Header = ({ filter, updateFilter }) => {
+    
     return (
         <header>
             <section className='title-block'>
@@ -14,16 +11,16 @@ const Header = () => {
             </section>
             <section className='button-container'>
                 <div className='small-button-container'>
-                    <button>ALL STORIES</button>
-                    <button>HEALTH</button>
-                    <button>US</button>
-                    <button>WORLD</button>
+                    <button id='' onClick={e => updateFilter(e)}>ALL STORIES</button>
+                    <button id='health' onClick={e => updateFilter(e)}>HEALTH</button>
+                    <button id='us' onClick={e => updateFilter(e)}>US</button>
+                    <button id='world' onClick={e => updateFilter(e)}>WORLD</button>
                 </div>
                 <div className='small-button-container'>
-                    <button>TECH</button>
-                    <button>BUSINESS</button>
-                    <button>OPINION</button>
-                    <button>TRAVEL</button>
+                    <button id='tech' onClick={e => updateFilter(e)}>TECH</button>
+                    <button id='business' onClick={e => updateFilter(e)}>BUSINESS</button>
+                    <button id='opinion' onClick={e => updateFilter(e)}>OPINION</button>
+                    <button id='travel' onClick={e => updateFilter(e)}>TRAVEL</button>
                 </div>
             </section>
         </header>
