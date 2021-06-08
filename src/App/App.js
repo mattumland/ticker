@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-
+import { getStories, cleanStoryData } from '../utilities.js'
 
 function App() {
 
@@ -11,7 +11,11 @@ function App() {
   const [storyDetails, setStoryDetails] = useState({})
 
   useEffect(() => {
-
+    getStories()
+    .then((stories) => {
+      setAllStories(cleanStoryData(stories))
+    })
+    .catch(error => setError(error))
   }, [])
 
   return (
