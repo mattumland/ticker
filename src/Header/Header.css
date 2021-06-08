@@ -30,7 +30,7 @@ h2 {
 .small-button-container {
     display: flex;
     flex-direction: row;
-    width: 460px;
+    width: 480px;
     justify-content: space-between;
 }
 
