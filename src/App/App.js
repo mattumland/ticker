@@ -10,7 +10,7 @@ function App() {
   const [allStories, setAllStories] = useState([])
   const [storyList, setStoryList] = useState([])
   const [filter, setFilter] = useState('')
-  const [storyDetails, setStoryDetails] = useState({})
+  const [storyDetails, setStoryDetails] = useState('')
 
   useEffect(() => {
     getStories()
@@ -25,9 +25,13 @@ function App() {
     setStoryList(filterStories(filter, allStories))
   }, [filter])
 
-  const updateFilter = (event) => {
-    setFilter(event.target.id)
+  const updateFilter = (e) => {
+    setFilter(e.target.id)
+  }
 
+  const updateDetails = (id) => {
+    const storyDetail = allStories.find(story => story.id === id)
+    setStoryDetails(storyDetail)
   }
 
   return (
@@ -39,6 +43,7 @@ function App() {
       {allStories.length && (
         <StoryGrid 
           stories={storyList}
+          updateDetails={updateDetails}
         />
       )}
     </main>
