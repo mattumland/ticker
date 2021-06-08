@@ -26,30 +26,23 @@ const formatDate = (date) => {
 
 }
 
-const filterStories = (filter, stories) => {
+export const filterStories = (filter, stories) => {
     switch(filter) {
-        case(''):
+        case '':
             return stories
-            break
-        case('health'):
+        case'health':
             return stories.filter(story => story.section === 'well' || story.section === 'health')
-            break
-        case('us'):
+        case 'us':
             return stories.filter(story => story.section === 'us')
-            break;
-        case('world'):
+        case 'world':
             return stories.filter(story => story.section === 'world' || story.section === 'climate')
-            break
-        case('sci'):
+        case 'sci':
             return stories.filter(story => story.section === 'science' || story.section === 'tech')
-            break
-        case('business'):
+        case 'business':
             return stories.filter(story => story.section === 'business' || story.section === 'realestate')
-            break
-        case ('opinion'):
+        case 'opinion':
             return stories.filter(story => story.section === 'opinion' || story.section === 'upshot')
-            break
-        case ('arts'):
+        case 'arts':
             return stories.filter(story => story.section === 'arts' || story.section === 'books' 
                 || story.section === 'podcasts' || story.section === 'style')
     }
