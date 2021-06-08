@@ -1,11 +1,10 @@
 export const getStories = () => {
     return fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=79dH4GCf9j1TWqvZjARmuXSuzreApm3p")
-    .then(response => {
-        return response.json()
-    })
+    .then(response => response.json())
 }
 
 export const cleanStoryData = (data) => {
+    console.log(data)
     return data.results.map((story, index) => {
         return {
             'section': story.section,
