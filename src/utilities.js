@@ -26,3 +26,7 @@ export const cleanStoryData = (data) => {
 const formatDate = (date) => {
 
 }
+
+const filterStories = () => {
+    
+}
