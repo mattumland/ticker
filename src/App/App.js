@@ -10,7 +10,7 @@ function App() {
   const [allStories, setAllStories] = useState([])
   const [storyList, setStoryList] = useState([])
   const [filter, setFilter] = useState('')
-  const [storyDetails, setStoryDetails] = useState('')
+  const [storyDetails, setStoryDetails] = useState(0)
 
   useEffect(() => {
     getStories()
@@ -32,6 +32,10 @@ function App() {
   const updateDetails = (id) => {
     const storyDetail = allStories.find(story => story.id === id)
     setStoryDetails(storyDetail)
+  }
+
+  const removeDetails = () => {
+    setStoryDetails(0);
   }
 
   return (
