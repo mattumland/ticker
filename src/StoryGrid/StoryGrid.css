@@ -35,7 +35,7 @@ img {
     background-color: black;
     height: 50px;
     text-align: left;
-    z-index: 3;
+    z-index: 1;
 }
 
 h3 {
