@@ -54,6 +54,7 @@ function App() {
       {storyDetails && (
         <StoryModal
           story={storyDetails}
+          removeDetails={removeDetails}
         />
       )}
     </main>
