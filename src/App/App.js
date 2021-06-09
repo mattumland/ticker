@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { getStories, cleanStoryData, filterStories } from '../utilities.js'
 import Header from '../Header/Header'
 import StoryGrid from '../StoryGrid/StoryGrid'
+import StoryModal from '../StoryModal/StoryModal'
 
 function App() {
 
@@ -48,6 +49,11 @@ function App() {
         <StoryGrid 
           stories={storyList}
           updateDetails={updateDetails}
+        />
+      )}
+      {storyDetails && (
+        <StoryModal
+          story={storyDetails}
         />
       )}
     </main>
