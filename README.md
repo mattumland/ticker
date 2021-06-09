@@ -1,6 +1,6 @@
 # Ticker
 
-Ticker consumes the New York Times top stories API to give user a simple interface for seeing today's top stories fast. An intuitive button interface provides quick filtering and large clickable cards trigger a modal for viewing story details. The app is fully tabbable. 
+Ticker consumes the New York Times top stories API to give user a simple interface for seeing today's top stories fast. An intuitive button interface provides quick filtering and large clickable cards trigger a modal for viewing story details. The app is fully tabbable. (everything is a button!)
 
 ## Running the App
 1. Clone the repo
