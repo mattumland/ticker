@@ -8,7 +8,9 @@ Ticker consumes the New York Times top stories API to give user a simple interfa
 3. npm start to run the developer server
 
 ## Planning
-The app was created as a take home assignment with a timeline of 6 hours. This is tight time restriction called for a simple design and user flow. Wireframes were created to ensure the layout was thought through prior to the start of coding. 
+The app was created as a take home assignment with a timeline of 6 hours. This is tight time restriction called for a simple design and user flow. Wireframes were created to ensure the layout was thought through prior to the start of coding. The design is intentionally simple to take full advantage of the image content provided by the API. Rather than create an elaborate color scheme or brand, Ticker lets the story titles and images to the talking. 
+
+A similar "less is more" approach is used for the header, which uses dynamic buttons to both filter the stories and announce to the user what filter is currently applied. 
 
 ![Web 1920 – 1](https://user-images.githubusercontent.com/72086109/121387448-adf75e00-c918-11eb-9d0a-f33af880d28e.png)
 ![Web 1920 – 2](https://user-images.githubusercontent.com/72086109/121387467-afc12180-c918-11eb-87c2-7486f25bc7c5.png)
