@@ -49,8 +49,8 @@
 }
 
 .full-img-box { 
-    border-top: solid 2px black;
-    background: ghostwhite;
+    /* border-top: solid 2px black; */
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .full-img {
@@ -69,5 +69,5 @@
 h5 {
     font-style: italic;
     font-weight: 500;
-    margin: 5px 0 3px 0;
+    margin: 8px 0 2px 0;
 }
