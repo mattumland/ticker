@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { getStories, cleanStoryData, filterStories } from '../utilities.js'
 import Header from '../Header/Header'
 import StoryGrid from '../StoryGrid/StoryGrid'
+import StoryModal from '../StoryModal/StoryModal'
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
   const [allStories, setAllStories] = useState([])
   const [storyList, setStoryList] = useState([])
   const [filter, setFilter] = useState('')
-  const [storyDetails, setStoryDetails] = useState({})
+  const [storyDetails, setStoryDetails] = useState(0)
 
   useEffect(() => {
     getStories()
@@ -25,9 +26,17 @@ function App() {
     setStoryList(filterStories(filter, allStories))
   }, [filter])
 
-  const updateFilter = (event) => {
-    setFilter(event.target.id)
+  const updateFilter = (e) => {
+    setFilter(e.target.id)
+  }
 
+  const updateDetails = (id) => {
+    const storyDetail = allStories.find(story => story.id === id)
+    setStoryDetails(storyDetail)
+  }
+
+  const removeDetails = () => {
+    setStoryDetails(0);
   }
 
   return (
@@ -39,6 +48,13 @@ function App() {
       {allStories.length && (
         <StoryGrid 
           stories={storyList}
+          updateDetails={updateDetails}
+        />
+      )}
+      {storyDetails && (
+        <StoryModal
+          story={storyDetails}
+          removeDetails={removeDetails}
         />
       )}
     </main>
