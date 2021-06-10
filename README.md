@@ -3,9 +3,9 @@
 Ticker consumes the New York Times top stories API to give user a simple interface for seeing today's top stories fast. An intuitive button interface provides quick filtering and large clickable cards trigger a modal for viewing story details.  
 
 ## Running the App
-1.Clone down this repo.
-2. Install dependencies in the root directory with npm install
-3. Start up the development server with npm start in the root project directory
+1.Clone down this repo.  
+2. Install dependencies in the root directory with npm install.    
+3. Start up the development server with npm start in the root project directory.   
 4. Go to http://localhost:3000/ to see the app.
 
 ## Final Site
