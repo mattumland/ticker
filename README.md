@@ -1,11 +1,17 @@
 # Ticker
 
-Ticker consumes the New York Times top stories API to give user a simple interface for seeing today's top stories fast. An intuitive button interface provides quick filtering and large clickable cards trigger a modal for viewing story details. The app is fully tabbable. (everything is a button!)
+Ticker consumes the New York Times top stories API to give user a simple interface for seeing today's top stories fast. An intuitive button interface provides quick filtering and large clickable cards trigger a modal for viewing story details.  
 
 ## Running the App
-1. Clone the repo
-2. npm install
-3. npm start to run the developer server
+1.Clone down this repo.
+2. Install dependencies in the root directory with npm install
+3. Start up the development server with npm start in the root project directory
+4. Go to http://localhost:3000/ to see the app.
+
+## Final Site
+
+![Screen Shot 2021-06-09 at 12 07 20 PM](https://user-images.githubusercontent.com/72086109/121390541-7b029980-c91b-11eb-848f-d977807523a4.png)  
+![Screen Shot 2021-06-09 at 12 07 31 PM](https://user-images.githubusercontent.com/72086109/121390574-83f36b00-c91b-11eb-9e98-5745b12cf466.png)
 
 ## Planning
 The app was created as a take home assignment with a timeline of 6 hours. This is tight time restriction called for a simple design and user flow. Wireframes were created in Adobe XD to ensure the layout was thought through prior to the start of coding. The design is intentionally simple to take full advantage of the image content provided by the API. Rather than create an elaborate color scheme or brand, Ticker lets the story titles and images to the talking. 
@@ -23,10 +29,9 @@ A similar "less is more" approach is used for the header, which uses dynamic but
 A basic data structure was planned, which clarified how API data would be cleaned, stored and used. 
 ![components   data](https://user-images.githubusercontent.com/72086109/121387491-b64f9900-c918-11eb-969a-17edb3b21222.png)
 
-### Final Site
-
-![Screen Shot 2021-06-09 at 12 07 20 PM](https://user-images.githubusercontent.com/72086109/121390541-7b029980-c91b-11eb-848f-d977807523a4.png)  
-![Screen Shot 2021-06-09 at 12 07 31 PM](https://user-images.githubusercontent.com/72086109/121390574-83f36b00-c91b-11eb-9e98-5745b12cf466.png)
+## Accessibility 
+The APP uses semantic HTML tags and leverages built in button behavior to ensure thta all story cards and header navigation is full tabble.
+<img width="1434" alt="Screen Shot 2021-06-10 at 12 24 37 PM" src="https://user-images.githubusercontent.com/72086109/121562053-157bdf00-c9e7-11eb-8a9f-57a52138a8e1.png">
 
 
 ## Tech Stack
@@ -39,8 +44,5 @@ A basic data structure was planned, which clarified how API data would be cleane
 
 - ![HTML5](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
 
-- ![SASS](https://img.shields.io/badge/SASS%20-hotpink.svg?&style=for-the-badge&logo=SASS&logoColor=white)
-
 - ![Webpack](https://img.shields.io/badge/webpack%20-%238DD6F9.svg?&style=for-the-badge&logo=webpack&logoColor=black)
 
-- ![Cypress](https://img.shields.io/badge/cypress%20-%2317202C.svg?&style=for-the-badge&logo=cypress&logoColor=white)
