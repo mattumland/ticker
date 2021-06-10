@@ -12,6 +12,10 @@ Ticker consumes the New York Times top stories API to give user a simple interfa
 
 ![Screen Shot 2021-06-09 at 12 07 20 PM](https://user-images.githubusercontent.com/72086109/121390541-7b029980-c91b-11eb-848f-d977807523a4.png)  
 ![Screen Shot 2021-06-09 at 12 07 31 PM](https://user-images.githubusercontent.com/72086109/121390574-83f36b00-c91b-11eb-9e98-5745b12cf466.png)
+![Screen Shot 2021-06-10 at 12 29 37 PM](https://user-images.githubusercontent.com/72086109/121562625-a357ca00-c9e7-11eb-90fc-2d99253f7daf.png)
+![Screen Shot 2021-06-10 at 12 29 47 PM](https://user-images.githubusercontent.com/72086109/121562643-a652ba80-c9e7-11eb-8abe-3b05f8620b48.png)
+![Screen Shot 2021-06-10 at 12 29 54 PM](https://user-images.githubusercontent.com/72086109/121562649-a81c7e00-c9e7-11eb-95df-64ad2942bbfd.png)
+
 
 ## Planning
 The app was created as a take home assignment with a timeline of 6 hours. This is tight time restriction called for a simple design and user flow. Wireframes were created in Adobe XD to ensure the layout was thought through prior to the start of coding. The design is intentionally simple to take full advantage of the image content provided by the API. Rather than create an elaborate color scheme or brand, Ticker lets the story titles and images to the talking. 
