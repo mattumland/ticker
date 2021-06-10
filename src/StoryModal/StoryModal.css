@@ -11,7 +11,7 @@
 .story-container {
     width:90%;
     height:90%;
-    margin: 100px auto;
+    margin: 82px auto;
     display: flex;
     flex-direction: column;
     overflow: scroll;
@@ -67,4 +67,24 @@ h5 {
 }
 a {
     margin: 10px 0 0 0;
+}
+
+
+@media screen and (max-width: 690px) {
+    
+    p {
+        font-size: 13px;
+    }
+    
+    a {
+        margin: 8px 0 0 0;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 13px;
+    }
+    
 }
