@@ -21,8 +21,7 @@ const StoryModal = ({ story, removeDetails }) => {
                     <p>{story.imageCaption}</p>
                     <h5>Image Credit</h5>
                     <p>{story.imageCredit}</p>
-                    <h5>Click here for the full story</h5>
-                    <a>{story.link}</a>
+                    <a href={story.link} target="_blank" rel="noopener noreferrer">Click here for the full story</a>
                 </aside>
             </section>
         </div>
