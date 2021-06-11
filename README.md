@@ -22,7 +22,7 @@ Ticker was made as a take-home challenge:
 
 
 ## Planning
-The app was created as a take home assignment with a timeline of 6 hours. This is tight time restriction called for a simple design and user flow. Wireframes were created in Adobe XD to ensure the layout was thought through prior to the start of coding. The design is intentionally simple to take full advantage of the image content provided by the API. Rather than create an elaborate color scheme or brand, Ticker lets the story titles and images to the talking. 
+This tight time restriction called for a simple design and user flow. Wireframes were created in Adobe XD to ensure the layout was thought through prior to the start of coding. The design is intentionally simple to take full advantage of the image content provided by the API. Rather than create an elaborate color scheme or brand, Ticker lets the story titles and images do the talking. 
 
 A similar "less is more" approach is used for the header, which uses dynamic buttons to both filter the stories and announce to the user what filter is currently applied. 
 
